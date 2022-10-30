@@ -1,0 +1,351 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+a{    
+    color: rgb(42, 135, 201);
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:"a1 a1"
+                        "a1 a1"                                                
+                        "a2 a2"                                                                        
+                        "a3 a3"                        
+                        "a4 a4"
+                        "a5 a5"
+                        "a6 a6"
+                        "a7 a7";
+    grid-gap: 70px;
+    width: 100%;  
+    background-color: black;  
+}
+
+nav{
+    background-image: url(./IMAGENS_GOT/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: a1;
+    width: 100%;  
+    height: 200px;
+    display: flex;    
+    justify-content: center;
+    align-items: center; 
+}
+
+.titulo{
+    color: rgb(42, 135, 201);
+    font-size: 50px;     
+}
+
+.container_slide{
+    grid-area: a2;
+}
+
+.slide{
+    width: 70%;
+    height: 350px;
+    border-radius: 5px;
+    margin:auto; 
+    position: relative;
+    box-shadow: 8px 10px 10px 4px rgba(115, 158, 202, 0.393);
+}
+
+.slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2000ms;
+    background-color: rgba(104, 6, 6, 0.786);
+}
+
+.slide img.select{
+    opacity: 1;
+}
+
+.container_temp1{
+    grid-area: a3;    
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.video_1temp{   
+    margin-top: 15px;    
+    width: 50%;
+    height: 350px;    
+}
+
+.video_1temp > iframe{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.texto_1temp{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify; 
+    width: 80%;    
+}
+
+.texto_1temp > h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(42, 135, 201);
+}
+
+.texto_1temp > p{
+    font-size: 25px;
+    color: rgb(217, 213, 213);
+}
+
+.container_temp2{
+    grid-area: a4;    
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;     
+}
+
+.video_2temp{   
+    margin-top: 15px;    
+    width: 50%;
+    height: 350px;    
+}
+
+.video_2temp > iframe{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.texto_2temp{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify; 
+    width: 80%;    
+}
+
+.texto_2temp > h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(185, 11, 11);
+}
+
+.texto_2temp > p{
+    font-size: 25px;
+    color: rgb(217, 213, 213);
+}
+
+.container_temp3{
+    grid-area: a5;    
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video_3temp{   
+    margin-top: 15px;    
+    width: 50%;
+    height: 350px;    
+}
+
+.video_3temp > iframe{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.texto_3temp{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify; 
+    width: 80%;    
+}
+
+.texto_3temp > h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(185, 11, 11);
+}
+
+.texto_3temp > p{
+    font-size: 25px;
+    color: rgb(217, 213, 213);
+}
+
+.container_temp4{
+    grid-area: a6;
+    display: flex;   
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video_4temp{   
+    margin-top: 15px;    
+    width: 50%;
+    height: 350px;    
+}
+
+.video_4temp > iframe{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.texto_4temp{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify; 
+    width: 80%;    
+}
+
+.texto_4temp > h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(185, 11, 11);
+}
+
+.texto_4temp > p{
+    font-size: 25px;
+    color: rgb(217, 213, 213);
+}
+
+footer{
+    grid-area: a7;  
+    background-color: rgb(156, 6, 6);
+}
+
+.rodape{
+    background-color: rgb(82, 80, 82);
+    grid-area: a7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.paragrafo_rodape{
+    margin: 8px;    
+}
+
+.redes_sociais{
+    margin: 8px;
+}
+
+.lista_redes{
+    list-style-type: none;       
+}
+
+.insta::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./FOOTER/1161953_instagram_icon.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 30px;
+    height: 30px;    
+}
+
+.face::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./FOOTER/211902_social_facebook_icon.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 30px;
+    height: 28px;
+}
+
+.linkdin::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./FOOTER/216394_linkedin_social_icon.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 30px;
+    height: 30px;
+}
+
+.li_foo{
+    display: inline;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 727px){
+
+    nav{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+    }
+
+    .titulo{
+        color: rgb(215, 4, 4);
+        font-size: 45px;        
+    }
+
+    .video_1temp, .video_2temp, .video_3temp, .video_4temp{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 425px){  
+
+    .paragrafo_rodape{
+        margin: 5px;  
+        width: 50%;  
+    }
+    
+    .redes_sociais{
+        margin: 5px;
+    }
+        
+    .insta::before{        
+        width: 25px;
+        height: 25px;    
+    }
+    
+    .face::before{          
+        width: 25px;
+        height: 23px;
+    }
+    
+    .linkdin::before{         
+        width: 25px;
+        height: 25px;
+    }
+    
+    .li_foo{
+        display: inline;
+        padding-left: 5px;
+    }
+}
+

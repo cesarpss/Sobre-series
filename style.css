@@ -1,0 +1,323 @@
+@font-face {
+    font-family:Tomorrow-semiBold;
+    src: url(./FONTES/Tomorrow-SemiBold.ttf);
+ }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.container{    
+    background-color: black;    
+    width: 100%;       
+    display: grid;    
+    grid-template-areas:"a1 a1"
+                        "a1 a1"
+                        "a2 a2"
+                        "a2 a2"
+                        "a2 a2"                        
+                        "a3 a3"
+                        "a3 a3"
+                        "a3 a3"
+                        "a4 a4"
+                        "a4 a4"
+                        "a4 a4"
+                        "a5 a5";
+   grid-gap: 60px;                     
+}
+
+.cabeca{    
+    background-image: url(./IMAGENS/papel_de_parede.jpg);    
+    background-size: cover;
+    grid-area: a1;
+    display: flex; 
+    justify-content:space-around;
+    align-items: center; 
+    height: 200px;   
+}
+
+nav{    
+    color: rgb(165, 89, 2);  
+    font-weight: 900; 
+    font-size: 12px;
+}
+
+.lista_menu{
+    list-style-type: none;     
+}
+
+.menu{
+    display: inline-block;
+    padding: 10px;              
+}
+
+.menu:hover{
+    border-color: red;
+    border-bottom-style: outset;
+    border: 1.5;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+#link_menu{
+    color: rgb(165, 89, 2)
+}
+
+.titulo{
+    color:rgb(232, 126, 4); 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    font-family: Tomorrow-semiBold,Arial, Helvetica, sans-serif;           
+}
+
+.titulo > h1{
+    font-size: 50px;
+}
+
+.titulo > h3{
+    font-size: 20px;
+}
+
+.container_got{        
+    grid-area: a2; 
+    display: flex; 
+    justify-content: flex-end;     
+}
+
+.got{
+    width: 50%;   
+    background-image: url(./IMAGENS/Game_Of_Thrones.jpg);    
+    background-size: cover;  
+    background-position: center;
+    border-radius: 10px;       
+}
+
+.texto_got{
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.titulo_got{
+    padding-bottom: 10px;
+    color: rgb(188, 98, 14);
+}
+
+.paragrafo_got{
+    font-size: 20px;
+    color: rgb(225, 221, 221);
+}
+
+.paragrafo_got::first-letter{
+    color: rgb(250, 160, 4);
+    font-size: 30px;
+}
+
+.container_st{    
+    grid-area: a3;
+    display: flex; 
+    justify-content: flex-start;    
+}
+
+.st{
+    width: 50%;   
+    background-image: url(./IMAGENS/poster3.jpeg);    
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; 
+}
+
+.texto_st{
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.titulo_st{
+    padding-bottom: 10px;
+    color: rgb(188, 98, 14);
+}
+
+.paragrafo_st{
+    font-size: 20px;
+    color: rgb(225, 221, 221);
+}
+
+.paragrafo_st::first-letter{
+    color: rgb(250, 160, 4);
+    font-size: 30px;
+}
+
+.container_tw{    
+    grid-area: a4;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.tw{
+    width: 50%;    
+    background-image: url(./IMAGENS/Thewitcher.jpg);    
+    background-size: cover;  
+    background-position: center;
+    border-radius: 10px; 
+}
+
+.texto_tw{
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.titulo_tw{
+    padding-bottom: 10px;
+    color: rgb(188, 98, 14);
+}
+
+.paragrafo_tw{
+    font-size: 20px;
+    color: rgb(225, 221, 221);
+}
+
+.paragrafo_tw::first-letter{
+    color: rgb(250, 160, 4);
+    font-size: 30px;
+}
+
+.rodape{
+    background-color: rgb(82, 80, 82);
+    grid-area: a5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.paragrafo_rodape{
+    margin: 8px;    
+}
+
+.redes_sociais{
+    margin: 8px;
+}
+
+.lista_redes{
+    list-style-type: none;       
+}
+
+.insta::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./FOOTER/1161953_instagram_icon.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 30px;
+    height: 30px;    
+}
+
+.face::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./FOOTER/211902_social_facebook_icon.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 30px;
+    height: 28px;
+}
+
+.linkdin::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./FOOTER/216394_linkedin_social_icon.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 30px;
+    height: 30px;
+}
+
+.li_foo{
+    display: inline;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 908px){
+
+    .menu{
+        display: block;
+        padding: 15px; 
+    }
+}
+
+@media only screen and (max-width: 508px){
+    .cabeca{           
+        background-size: cover;
+        grid-area: a1;
+        display: flex; 
+        flex-direction: column;
+        justify-content:center;
+        align-items: center; 
+        text-align: center;
+        height: 100%;   
+    }
+
+    .menu{
+        display: block;
+        padding: 10px;
+        margin-top: 15px; 
+        border: 1px solid rgb(243, 239, 239);
+    }
+}
+
+@media only screen and (max-width: 425px){  
+
+    .paragrafo_rodape{
+        margin: 5px;  
+        width: 50%;  
+    }
+    
+    .redes_sociais{
+        margin: 5px;
+    }
+        
+    .insta::before{        
+        width: 25px;
+        height: 25px;    
+    }
+    
+    .face::before{          
+        width: 25px;
+        height: 23px;
+    }
+    
+    .linkdin::before{         
+        width: 25px;
+        height: 25px;
+    }
+    
+    .li_foo{
+        display: inline;
+        padding-left: 5px;
+    }
+
+}
